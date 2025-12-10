@@ -14,11 +14,12 @@ const myVariable = 'Mathematics';
 console.log(myVariable.length); // 11
 console.log(myVariable.charAt(5)); // m
 console.log(myVariable.indexOf('t')); // 3
-console.log(myVariable.lastIndexOf('at')); // 6
+console.log(myVariable.lastIndexOf('at')); // 1
 console.log(myVariable.slice(5, 8)); // mat
 console.log(myVariable.toUpperCase()); // MATHEMATICS
 console.log(myVariable.toLowerCase()); // mathematics
-console.log(myVariable.includes('math')); // true
+console.log(myVariable.includes('math')); // false
+// cspell:ignore matics
 console.log(myVariable.split('e')); // [ 'Math', 'matics' ]
 
 
