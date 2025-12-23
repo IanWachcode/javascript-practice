@@ -45,9 +45,9 @@ myFunction = () => {
 
 }
 revert = () => {
-document.getElementById("p1").textContent = fullName;
-document.getElementById("p2").textContent = age;
-document.getElementById("p3").textContent = student;
+    document.getElementById("p1").textContent = fullName;
+    document.getElementById("p2").textContent = age;
+    document.getElementById("p3").textContent = student;
 }
 let fullName = "Ian Wachira";
 let age = 34;
