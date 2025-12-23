@@ -38,9 +38,22 @@
 //console.log(`Is Ian a student: ${isStudent}`);
 //console.log(typeof isStudent); //boolean
 
+myFunction = () => {
+    document.getElementById("p1").textContent = "Wachira Ian";
+    document.getElementById("p2").textContent = 33;
+    document.getElementById("p3").textContent = "I am a student";
+
+}
+revert = () => {
+document.getElementById("p1").textContent = fullName;
+document.getElementById("p2").textContent = age;
+document.getElementById("p3").textContent = student;
+}
 let fullName = "Ian Wachira";
 let age = 34;
 let student = true;
+
+
 
 document.getElementById("p1").textContent = fullName;
 document.getElementById("p2").textContent = age;
