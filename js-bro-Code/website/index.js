@@ -42,6 +42,7 @@ myFunction = () => {
     document.getElementById("p1").textContent = "Wachira Ian";
     document.getElementById("p2").textContent = 33;
     document.getElementById("p3").textContent = "I am a student";
+    
 
 }
 revert = () => {
