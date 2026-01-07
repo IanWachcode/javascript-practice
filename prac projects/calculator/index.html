@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="model">Wach Code 01</div>
+            <input type="text" class="display" id="display" placeholder="0" disabled>
+            <div class="buttons">
+                <button class="button clear" onclick="ClearDisplay()">C</button>
+
+                <button class="button operator" 
+            onclick="AppendOperator('/')">/</button>
+                <button class="button operator" 
+            onclick="AppendOperator('*')">*</button>
+                <button class="button operator" 
+            onclick="AppendOperator('-')">-</button>
+
+                <button class="button number" 
+            onclick="AppendNumber('7')">7</button>
+                <button class="button number" 
+            onclick="AppendNumber('8')">8</button>
+                <button class="button number" 
+            onclick="AppendNumber('9')">9</button>
+                <button class="button number" 
+            onclick="AppendOperator('+')">+</button>
+
+                <button class="button number" 
+            onclick="AppendNumber('4')">4</button>
+                <button class="button number" 
+            onclick="AppendNumber('5')">5</button>
+                <button class="button number" 
+            onclick="AppendNumber('6')">6</button>
+                <button class="button operator" 
+            onclick="AppendOperator('%')">%</button>
+
+                <button class="button number" 
+            onclick="AppendNumber('1')">1</button>
+                <button class="button number" 
+            onclick="AppendNumber('2')">2</button>
+                <button class="button number" 
+            onclick="AppendNumber('3')">3</button>
+                <button class="button number" 
+            onclick="AppendNumber('0')">0</button>
+
+            <button class="button operator" 
+                onclick="AppendOperator('-')">-</button>
+            <button class="button operator" 
+                onclick="AppendOperator('+')">+</button>
+            <button class="button operator" 
+                onclick="AppendOperator('/')">/</button>
+                <button class="button equal" 
+                onclick="Calculate()">=</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
