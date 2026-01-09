@@ -9,4 +9,4 @@ console.log(age);
 console.log(isLearningJS);
 
 let userName = "Ian Wachira";
-console.log(`Hello ${userName}, welcome to JavaScript programming!`);
+console.log(`Hello ${userName}, welcome to JavaScript programming!`); // Using template literals used backticks
