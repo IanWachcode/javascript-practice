@@ -12,7 +12,7 @@ const name = "Alice";
 const age = 30;
 const isCool = true;
 const rating = 4.5;
-const x = null;
+//const x = null;
 const y = undefined;
 let z; // declared but not assigned, so it's undefined
 
@@ -96,5 +96,51 @@ for (let i = 0; i < todos.length; i++) {
 
 //for..of loop
 for (let todo of todos) {
-    console.log(todo.text); // prints text of each todo
+    //console.log(todo.text); // prints text of each todo
 }
+
+//forEach, map, filter
+todos.forEach(function(todo) {
+    //console.log(todo.text); // prints text of each todo 
+});
+
+//map
+const todoText = todos.map(function(todo) {
+    return todo.text; // creates an array of todo texts
+});
+//console.log(todoText);
+
+//filter
+const completedTodos = todos.filter(function(todo) {
+    return todo.isCompleted === true; // creates an array of completed todos
+}).map(function(todo) {
+    return todo.text; // creates an array of texts of completed todos
+})
+//console.log(completedTodos);
+
+// chaining map and filter
+const completedTodoTexts = todos
+    .filter(function(todo) {
+        return todo.isCompleted === true;
+    })
+    .map(function(todo) {
+        return todo.text;
+    });
+//console.log(completedTodoTexts);
+
+
+//conditionals
+
+const x = 20;
+
+ if (x === 10){
+    console.log("x is equal to 10");
+ } else if (x > 10) {
+    console.log("x is greater than 10");
+ }
+ else {
+    console.log("x is less than 10");
+ }
+
+    //ternary operator
+    
