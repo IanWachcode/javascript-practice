@@ -222,5 +222,5 @@ const person3 = new PersonClass("Emily", "Davis", "11-22-1995");
 //console.log(person3.getFullName());
 //console.log(person3.getBirthYear()); 
 
-console.log(person1, person2, person3);
+//console.log(person1, person2, person3);
      

@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traversy Media</title>
-</head>
-<body>
-    <h1>Learning JavaScript</h1>
-    <script src="script.js"></script>
-</body>
+    <meta name="description" content="JavaScript for Beginners tutorial by Traversy Media">
+    <title>Traversy Media - JS For Beginners</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>JS For Beginners</h1>
+    </header>
+
+    <main>
+      <section class="container">
+        <form id="my-form" novalidate>
+          <h1>Add User</h1>
+          <div class="msg" role="alert" aria-live="polite"></div>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+          </div>
+          <input class="btn" type="submit" value="Submit">
+        </form>
+
+        <ul id="users" aria-label="List of added users"></ul>
+        <ul id="items" aria-label="List of items">
+          <li class="item">Item 1</li>
+          <li class="item">Item 2</li>
+          <li class="item">Item 3</li>
+          </ul>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
